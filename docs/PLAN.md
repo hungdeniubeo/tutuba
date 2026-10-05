@@ -24,9 +24,13 @@ khi kiểm chứng prototype Dư Ảnh. Commit milestone sau khi gate của nó 
 
 ## M2 — một trận kiểm chứng Dư Ảnh
 
-Tạo `Combat/TutubaCombatTypes.h`, `TutubaCombatModel.{h,cpp}` và UE automation
-tests ở `Private/Tests/`. Model nhận Move/Attack/ShiftEcho/EndRound, trả trạng
-thái/event theo thiết kế. DataAsset gameplay được tạo qua Editor sau compile.
+Tạo model deterministic engine-independent tại
+`Source/Tutuba/Public/TutubaCombatModel.h` và
+`Source/Tutuba/Private/TutubaCombatModel.cpp`, cùng host test
+`Tests/TutubaCombatCoreTests.cpp`. Model nhận Move/Attack/ShiftEcho/EndRound,
+trả trạng thái/event theo thiết kế. Sau khi M1 build được, thêm UE automation
+tests ở module Editor và nối model vào controller/UI; DataAsset gameplay được
+tạo qua Editor sau compile.
 Nối input chọn nhân vật/ô, overlay ý định/ảnh, AP và end turn; mỗi nhân vật
 đủ 3 kỹ năng. Dùng blockout; một encounter debug cố định có reset.
 
