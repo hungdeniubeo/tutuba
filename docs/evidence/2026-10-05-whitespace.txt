@@ -1,0 +1,2 @@
+git diff --no-index --check /dev/null <each untracked file>
+PASS: no whitespace errors in newly created files.

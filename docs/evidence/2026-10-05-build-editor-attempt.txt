@@ -1,0 +1,7 @@
+$ bash Scripts/ue.sh build-editor
+UTC: 2026-10-05T03:14:32.141502+00:00
+exit_code=1
+Tutuba preflight blocked:
+- Select a full Xcode installation; Command Line Tools alone cannot build this UE project.
+- Metal compiler is unavailable through xcrun; install/enable the Xcode Metal toolchain.
+- Unreal Engine 5.8 was not found. Set UE_ROOT to its installation directory.

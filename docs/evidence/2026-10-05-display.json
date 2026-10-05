@@ -1,0 +1,14 @@
+[
+  {
+    "sppci_model": "Apple M4",
+    "sppci_cores": "10",
+    "displays": [
+      {
+        "_name": "LG FHD",
+        "spdisplays_resolution": "1920 x 1080 @ 120.00Hz",
+        "spdisplays_pixelresolution": "spdisplays_1080p",
+        "spdisplays_main": "spdisplays_yes"
+      }
+    ]
+  }
+]

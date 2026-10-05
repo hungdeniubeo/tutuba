@@ -1,0 +1,19 @@
+PASS actor starts with two AP
+PASS movement and invalid moves
+PASS AP reset, no carry
+PASS echo timing and damage
+PASS empty attacks leave fixed echoes
+PASS friendly fire
+PASS echo is single-use
+PASS simultaneous defeat
+PASS dead echo owner
+PASS echo minimum damage
+PASS empty attack costs AP
+PASS shift echo quota and deadline
+PASS invalid shift is free
+PASS push moves into an empty cell
+PASS push collision is blocked
+PASS echo damage is simultaneous
+PASS shield absorbs echo damage
+PASS victory clears pending echoes
+18/18 passed

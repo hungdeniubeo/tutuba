@@ -1,0 +1,2 @@
+$ bash -n Scripts/ue.sh
+exit_code=0

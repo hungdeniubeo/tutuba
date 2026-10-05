@@ -1,0 +1,17 @@
+# Unreal generated output; source assets remain tracked.
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Builds/
+.vs/
+.idea/
+.DS_Store
+*.sln
+*.suo
+*.xcworkspace/
+*.xcodeproj/
+*.VC.db
+__pycache__/
+*.pyc
+.superpowers/

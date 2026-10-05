@@ -1,0 +1,109 @@
+{
+  "ready": false,
+  "system": {
+    "os": "Darwin",
+    "macos_version": "26.7.1",
+    "architecture": "arm64"
+  },
+  "hardware": {
+    "model": "Mac16,10",
+    "chip": "Apple M4",
+    "memory_bytes": 17179869184,
+    "probes": [
+      {
+        "command": [
+          "sysctl",
+          "-n",
+          "hw.model"
+        ],
+        "returncode": 0,
+        "stdout": "Mac16,10",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "sysctl",
+          "-n",
+          "machdep.cpu.brand_string"
+        ],
+        "returncode": 0,
+        "stdout": "Apple M4",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "sysctl",
+          "-n",
+          "hw.memsize"
+        ],
+        "returncode": 0,
+        "stdout": "17179869184",
+        "stderr": ""
+      }
+    ]
+  },
+  "disk": {
+    "path": "/Users/hung/tutuba",
+    "free_bytes": 201219031040
+  },
+  "xcode": {
+    "developer_directory": "/Library/Developer/CommandLineTools",
+    "version": null,
+    "metal_path": null,
+    "probes": [
+      {
+        "command": [
+          "xcode-select",
+          "-p"
+        ],
+        "returncode": 0,
+        "stdout": "/Library/Developer/CommandLineTools",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xcodebuild",
+          "-version"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance"
+      },
+      {
+        "command": [
+          "xcrun",
+          "--find",
+          "metal"
+        ],
+        "returncode": 72,
+        "stdout": "",
+        "stderr": "xcrun: error: unable to find utility \"metal\", not a developer tool or in PATH"
+      }
+    ]
+  },
+  "engine": {
+    "root": null,
+    "version": null,
+    "source": "standard locations",
+    "searched": [
+      "/Users/Shared/Epic Games",
+      "/Applications/Epic Games",
+      "/Applications",
+      "/Users/hung/Epic Games"
+    ],
+    "error": "Unreal Engine 5.8 was not found. Set UE_ROOT to its installation directory."
+  },
+  "blockers": [
+    "Select a full Xcode installation; Command Line Tools alone cannot build this UE project.",
+    "Metal compiler is unavailable through xcrun; install/enable the Xcode Metal toolchain.",
+    "Unreal Engine 5.8 was not found. Set UE_ROOT to its installation directory."
+  ],
+  "warnings": [],
+  "recommended": {
+    "unreal_engine": "5.8",
+    "xcode": "26.1.1"
+  },
+  "note": "Preflight checks availability only. Toolchain compatibility and project correctness require an actual native Unreal build.",
+  "captured_at_utc": "2026-10-05T03:14:32.193082+00:00",
+  "exit_code": 1
+}

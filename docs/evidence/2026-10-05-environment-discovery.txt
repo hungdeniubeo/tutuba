@@ -1,0 +1,106 @@
+TUTUBA environment discovery
+UTC: 2026-10-05T03:11:57.525566+00:00
+No serial numbers or full environment captured.
+
+$ sw_vers
+exit_code=0
+ProductName:		macOS
+ProductVersion:		26.7.1
+BuildVersion:		25G241
+(stderr empty)
+
+$ uname -m
+exit_code=0
+arm64
+(stderr empty)
+
+$ sysctl -n hw.model
+exit_code=0
+Mac16,10
+(stderr empty)
+
+$ sysctl -n machdep.cpu.brand_string
+exit_code=0
+Apple M4
+(stderr empty)
+
+$ sysctl -n hw.memsize
+exit_code=0
+17179869184
+(stderr empty)
+
+$ sysctl -n hw.ncpu
+exit_code=0
+10
+(stderr empty)
+
+$ xcode-select -p
+exit_code=0
+/Library/Developer/CommandLineTools
+(stderr empty)
+
+$ xcodebuild -version
+exit_code=1
+(stdout empty)
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+$ xcrun --sdk macosx --show-sdk-version
+exit_code=0
+27.0
+(stderr empty)
+
+$ xcrun --find metal
+exit_code=72
+(stdout empty)
+xcrun: error: unable to find utility "metal", not a developer tool or in PATH
+
+$ df -h .
+exit_code=0
+Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s5   460Gi   251Gi   187Gi    58%    1.3M  2.0G    0%   /System/Volumes/Data
+(stderr empty)
+
+$ git status --short --branch
+exit_code=0
+## No commits yet on feat/tutuba-vertical-slice
+?? .gitignore
+?? ASSET_LICENSES.md
+?? Config/
+?? Content/
+?? README.md
+?? Scripts/
+?? Source/
+?? Tests/
+?? Tutuba.uproject
+?? docs/
+(stderr empty)
+
+$ git rev-parse --verify HEAD
+exit_code=128
+(stdout empty)
+fatal: Needed a single revision
+
+$ git ls-remote --heads origin
+exit_code=0
+(stdout empty)
+(stderr empty)
+
+$ mdfind kMDItemFSName == "UnrealEditor.app" || kMDItemFSName == "Xcode*.app" || kMDItemFSName == "UE_5*"
+exit_code=0
+(stdout empty)
+(stderr empty)
+
+$ mdfind kMDItemFSName == "Build.version" && kMDItemPath == "*/Engine/Build/*"
+exit_code=0
+(stdout empty)
+(stderr empty)
+
+/Applications/Xcode.app: exists=False
+/Applications/Epic Games Launcher.app: exists=False
+/Users/Shared/Epic Games: exists=False
+/Users/Shared/EpicGames: exists=False
+/Users/hung/Library/Application Support/Epic/UnrealEngine: exists=False
+/Users/hung/Library/Application Support/Epic/EpicGamesLauncher/Data/Manifests: exists=False
+
+Initial inspection before changes: .git and ignored .serena only; no project files.
+No ancestor AGENTS.md found; user-provided AGENTS instructions and /Users/hung/.codex/RTK.md applied.

@@ -1,0 +1,9 @@
+Python AST syntax: Scripts/Editor/create_starter_map.py
+Python AST syntax: Scripts/check_environment.py
+Python AST syntax: Tests/test_environment.py
+Python AST syntax: Tests/test_starter_map.py
+Project descriptor: JSON parse PASS (not UBT/UHT)
+INI syntax: Config/DefaultEngine.ini
+INI syntax: Config/DefaultGame.ini
+INI syntax: Config/DefaultGameUserSettings.ini
+Content binary assets: none (Unreal generation blocked)
