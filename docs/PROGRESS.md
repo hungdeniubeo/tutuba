@@ -52,6 +52,8 @@ không đủ thay full Xcode. [Chi tiết môi trường](ENVIRONMENT.md).
 - `Tests/run_combat_core.sh`: **18/18 pass**, compile bằng Apple clang với
   `-std=c++17 -Wall -Wextra -Werror -pedantic`. [Log model](evidence/2026-10-05-combat-core.txt).
   Đây là bằng chứng luật thuần C++ ở host; chưa phải UBT/UHT hoặc runtime UE.
+- Bản chạy lại với AddressSanitizer và UndefinedBehaviorSanitizer cũng **18/18
+  pass**, không có chẩn đoán sanitizer. [Log](evidence/2026-10-05-combat-core-sanitized.txt).
 - `bash -n Scripts/ue.sh`: exit 0. [Log syntax](evidence/2026-10-05-bash-syntax.txt).
 - Python AST parse (kể cả Editor script), JSON descriptor và 3 INI parse:
   pass. `Content/` không có binary asset giả.
