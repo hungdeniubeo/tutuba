@@ -1,0 +1,31 @@
+
+> tutuba-web@0.1.0 test
+> vitest run --reporter=dot
+
+
+ RUN  v3.2.7 /Users/hung/tutuba/web
+
+···································
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/game/autobattle/AutoBattleModel.test.ts [ src/game/autobattle/AutoBattleModel.test.ts ]
+Error: Cannot find module './AutoBattleModel' imported from '/Users/hung/tutuba/web/src/game/autobattle/AutoBattleModel.test.ts'
+ ❯ src/game/autobattle/AutoBattleModel.test.ts:2:1
+      1| import { describe, expect, it } from 'vitest';
+      2| import { AutoBattleModel } from './AutoBattleModel';
+       | ^
+      3| import { type PlacedUnit } from './PreparationModel';
+      4| const units: PlacedUnit[] = [
+
+Caused by: Error: Failed to load url ./AutoBattleModel (resolved id: ./AutoBattleModel) in /Users/hung/tutuba/web/src/game/autobattle/AutoBattleModel.test.ts. Does the file exist?
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/config.js:22739:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 3 passed (4)
+      Tests  35 passed (35)
+   Start at  11:53:38
+   Duration  331ms (transform 80ms, setup 0ms, collect 122ms, tests 103ms, environment 0ms, prepare 144ms)
+

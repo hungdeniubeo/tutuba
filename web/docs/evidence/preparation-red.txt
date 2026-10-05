@@ -1,0 +1,31 @@
+
+> tutuba-web@0.1.0 test
+> vitest run --reporter=dot
+
+
+ RUN  v3.2.7 /Users/hung/tutuba/web
+
+·····························
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/game/autobattle/PreparationModel.test.ts [ src/game/autobattle/PreparationModel.test.ts ]
+Error: Cannot find module './PreparationModel' imported from '/Users/hung/tutuba/web/src/game/autobattle/PreparationModel.test.ts'
+ ❯ src/game/autobattle/PreparationModel.test.ts:2:1
+      1| import { describe, expect, it } from 'vitest';
+      2| import { PreparationModel } from './PreparationModel';
+       | ^
+      3| 
+      4| // The same preparation model will be used by either agreed connection…
+
+Caused by: Error: Failed to load url ./PreparationModel (resolved id: ./PreparationModel) in /Users/hung/tutuba/web/src/game/autobattle/PreparationModel.test.ts. Does the file exist?
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/config.js:22739:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  29 passed (29)
+   Start at  11:49:37
+   Duration  319ms (transform 63ms, setup 0ms, collect 82ms, tests 109ms, environment 0ms, prepare 111ms)
+

@@ -1,0 +1,80 @@
+{
+  "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#start:not([disabled])') to be visible\u001b[22m\n",
+  "steps": [
+    "Guide, camera rotation, canvas strike and occupied-cell Echo shift/deadline verified.",
+    "Guard cap, shove, fixed Echo zone, friendly fire and single resolution verified through canvas clicks.",
+    "Crossing 1: victory after 4 UI actions, round 2.",
+    "Crossing 2: victory after 13 UI actions, round 5.",
+    "Crossing 3: victory after 15 UI actions, round 6.",
+    "Crossing 4: victory after 27 UI actions, round 10.",
+    "Defeat reached by normal End turn actions.",
+    "Restart after defeat resets HP, AP, round and Echo queue.",
+    "390px mobile layout has no horizontal overflow."
+  ],
+  "errors": [],
+  "consoleMessages": [],
+  "state": {
+    "state": {
+      "round": 1,
+      "phase": "player",
+      "playerId": "hero",
+      "actors": [
+        {
+          "id": "01-bramble",
+          "name": "Gai Trinh Sát",
+          "kind": "bramble",
+          "cell": {
+            "x": 3,
+            "y": 3
+          },
+          "hp": 15,
+          "faction": "enemy",
+          "maxHp": 15,
+          "shield": 0,
+          "maxShield": 0,
+          "ap": 2,
+          "maxAp": 2,
+          "alive": true
+        },
+        {
+          "id": "hero",
+          "name": "Aster",
+          "faction": "player",
+          "kind": "hero",
+          "cell": {
+            "x": 1,
+            "y": 3
+          },
+          "hp": 24,
+          "maxHp": 24,
+          "shield": 0,
+          "maxShield": 6,
+          "ap": 2,
+          "maxAp": 2,
+          "alive": true
+        }
+      ],
+      "echoes": [],
+      "intents": [
+        {
+          "enemyId": "01-bramble",
+          "kind": "move",
+          "target": {
+            "x": 2,
+            "y": 3
+          },
+          "cells": [],
+          "damage": 0,
+          "push": false,
+          "label": "Gai Trinh Sát: tiến đến C4"
+        }
+      ],
+      "echoShiftedThisRound": false,
+      "log": [],
+      "lastEvent": "Đọc ý định đã đánh dấu. Mỗi hành động tốn 1 AP."
+    },
+    "encounterIndex": 0,
+    "playing": false,
+    "mode": "move"
+  }
+}

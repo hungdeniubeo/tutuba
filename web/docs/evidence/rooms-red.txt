@@ -1,0 +1,32 @@
+
+> tutuba-web@0.1.0 test
+> vitest run --reporter=dot
+
+
+ RUN  v3.2.7 /Users/hung/tutuba/web
+
+······································
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  server/RoomServer.test.ts [ server/RoomServer.test.ts ]
+Error: Cannot find module './RoomServer' imported from '/Users/hung/tutuba/web/server/RoomServer.test.ts'
+ ❯ server/RoomServer.test.ts:3:1
+      1| import { afterEach, describe, expect, it } from 'vitest';
+      2| import WebSocket from 'ws';
+      3| import { createRoomServer } from './RoomServer';
+       | ^
+      4| const servers: ReturnType<typeof createRoomServer>[] = [];
+      5| const sockets: WebSocket[] = [];
+
+Caused by: Error: Failed to load url ./RoomServer (resolved id: ./RoomServer) in /Users/hung/tutuba/web/server/RoomServer.test.ts. Does the file exist?
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/config.js:22739:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 4 passed (5)
+      Tests  38 passed (38)
+   Start at  11:56:30
+   Duration  358ms (transform 107ms, setup 0ms, collect 193ms, tests 131ms, environment 0ms, prepare 223ms)
+

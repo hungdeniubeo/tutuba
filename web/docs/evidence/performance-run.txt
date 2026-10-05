@@ -1,0 +1,68 @@
+
+> tutuba-web@0.1.0 verify:performance
+> node scripts/measure-performance.mjs
+
+Warm-up complete. Measuring 180 seconds of foreground combat at 1920×1080.
+{
+  "date": "2026-10-05T04:49:36.975Z",
+  "source": "http://127.0.0.1:4173",
+  "build": "Vite production preview",
+  "browser": "154.0.8037.95",
+  "machine": {
+    "os": "darwin",
+    "release": "25.6.0",
+    "architecture": "arm64",
+    "cpu": "Apple M4",
+    "memoryBytes": 17179869184,
+    "macOS": "26.7.1"
+  },
+  "warmupMs": 30000,
+  "combatActions": 201,
+  "methodology": "requestAnimationFrame intervals around actual Three.js renders during UI combat/restarts. Mean FPS = frames / sum(dt); 1% low = 1000 / mean(slowest ceil(1% frames) dt). Entire 1920×1080 browser viewport, DPR=1; canvas dimensions recorded separately. Foreground tab required. No extrapolation to other devices.",
+  "renderer": "WebGL",
+  "durationMs": 180005.80000000037,
+  "frames": 21601,
+  "averageFps": 119.99922226326946,
+  "onePercentLowFps": 106.49784059676216,
+  "p99FrameMs": 9.300000000017462,
+  "maxFrameMs": 9.5,
+  "invalidHiddenTab": false,
+  "viewport": [
+    1920,
+    1080
+  ],
+  "canvas": [
+    1550,
+    812
+  ],
+  "pixelRatio": 1,
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "memory": {
+    "usedJSHeapSize": 12400419,
+    "totalJSHeapSize": 24204139
+  },
+  "bundle": {
+    "totalBytes": 1358764,
+    "files": [
+      {
+        "file": "assets/index-DdZdclGb.js",
+        "bytes": 759297
+      },
+      {
+        "file": "assets/index-H4Jmi0GP.css",
+        "bytes": 13449
+      },
+      {
+        "file": "assets/three.webgpu-BrTs-Cgw.js",
+        "bytes": 585291
+      },
+      {
+        "file": "index.html",
+        "bytes": 727
+      }
+    ]
+  },
+  "errors": [],
+  "consoleMessages": [],
+  "passed": true
+}

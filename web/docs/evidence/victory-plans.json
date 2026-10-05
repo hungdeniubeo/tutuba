@@ -1,0 +1,347 @@
+[
+  [
+    {
+      "type": "move",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 3
+      }
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "cell": {
+        "x": 2,
+        "y": 4
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 3,
+        "y": 4
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 4
+      }
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 3,
+        "y": 2
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 1
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 1
+      }
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 4
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 4
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 3,
+        "y": 2
+      }
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 3,
+        "y": 1
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 0
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 3,
+        "y": 0
+      }
+    },
+    {
+      "type": "end"
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "cell": {
+        "x": 1,
+        "y": 3
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 1,
+        "y": 3
+      }
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 1
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 2,
+        "y": 1
+      }
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 3,
+        "y": 2
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 4,
+        "y": 2
+      }
+    },
+    {
+      "type": "move",
+      "cell": {
+        "x": 4,
+        "y": 3
+      }
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "type": "strike",
+      "cell": {
+        "x": 4,
+        "y": 4
+      }
+    },
+    {
+      "type": "end"
+    }
+  ]
+]

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05T04:45:35.600Z",
+  "status": "PASS",
+  "url": "http://127.0.0.1:4173",
+  "browser": "154.0.8037.95",
+  "viewport": "1920×1080, deviceScaleFactor 1",
+  "wallSeconds": 3.289,
+  "steps": [
+    "Guide, camera rotation, canvas strike and occupied-cell Echo shift/deadline verified.",
+    "Guard cap, shove, fixed Echo zone, friendly fire and single resolution verified through canvas clicks.",
+    "Crossing 1: victory after 4 UI actions, round 2.",
+    "Crossing 2: victory after 13 UI actions, round 5.",
+    "Crossing 3: victory after 15 UI actions, round 6.",
+    "Crossing 4: victory after 27 UI actions, round 10.",
+    "Defeat reached by normal End turn actions.",
+    "Restart after defeat resets HP, AP, round and Echo queue.",
+    "390px mobile layout has no horizontal overflow.",
+    "Opt-in renderer opened and accepted movement: WebGPU (thử nghiệm)."
+  ],
+  "errors": [],
+  "consoleMessages": [],
+  "note": "Automated mouse playthrough validates functionality, not first-time human pacing."
+}

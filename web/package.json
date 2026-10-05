@@ -1,0 +1,31 @@
+{
+  "name": "tutuba-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && npm run build:server",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "verify:browser": "node scripts/verify-browser.mjs",
+    "verify:performance": "node scripts/measure-performance.mjs",
+    "build:server": "node scripts/build-server.mjs",
+    "start": "node server-dist/index.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/three": "^0.180.0",
+    "@types/ws": "^8.18.2",
+    "esbuild": "^0.28.2",
+    "playwright-core": "^1.63.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  }
+}
